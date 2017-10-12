@@ -1,0 +1,33 @@
+{
+  "name": "trabalho-faculdade-4periodo--frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandomota/trabalho-faculdade-4periodo--frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandomota/trabalho-faculdade-4periodo--frontend/issues"
+  },
+  "homepage": "https://github.com/brandomota/trabalho-faculdade-4periodo--frontend#readme",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-js-obfuscator": "^1.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jshint": "^2.9.5",
+    "run-sequence": "^2.2.0"
+  }
+}
