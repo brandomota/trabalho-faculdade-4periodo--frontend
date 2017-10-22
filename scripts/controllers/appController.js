@@ -2,10 +2,11 @@
     'use strict';
  }());
 
- angular.module('botApp').controller('appCtrl',[function(){
+ angular.module('botApp').controller('appCtrl',["$scope", "botService",
+ function($scope, botService){
 
-    var amqp = require('amqplib/callback_api');
-
-    
+    $scope.conectarBot = function(){
+        
+    };    
 
  }]);
