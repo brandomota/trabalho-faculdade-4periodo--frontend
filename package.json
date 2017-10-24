@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/brandomota/trabalho-faculdade-4periodo--frontend#readme",
   "dependencies": {
-    "amqplib": "^0.5.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",

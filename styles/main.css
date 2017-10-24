@@ -50,6 +50,7 @@ ul {
     bottom:32px;
     display:flex;
     flex-direction: column;
+    overflow: auto;
 
 }
 .msj:before{
@@ -89,3 +90,7 @@ input:focus{
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
 }   
+
+.text-mensage{
+    font-weight: bold;
+}
