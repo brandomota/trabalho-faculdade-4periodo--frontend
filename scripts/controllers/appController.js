@@ -4,15 +4,24 @@
 
     $scope.listaMsgs = [];
 
-    $scope.teste = function(){
-        console.log("ojjjjj")
+
+    $scope.enviarMensagem = function(mensagem){
+        var mensagemEnviada = {"Texto": mensagem, "Send": 1}
+        $scope.listaMsgs.push(mensagemEnviada)
+        botService.enviarMensagem(mensagem)
+            .then(function(retorno){
+                var msg = {"Texto": retorno.data, "Send": 2}
+                $scope.listaMsgs.push(msg)
+            })
+            .catch(function(erro){
+                console.log(erro)
+                toastr.error("Deu um erro")
+            })
     }
 
     $scope.conectarBot = function(){
-        console.log("oks")
         botService.retornarPrimeiraMensagem()
         .then(function(retorno){
-            console.log(retorno)
             var msg = {"Texto": retorno.data, "Send": 2};
             $scope.listaMsgs.push(msg);
         }).catch(function(){

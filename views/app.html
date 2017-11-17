@@ -3,7 +3,7 @@
 
     <div class="col-sm-3 col-sm-offset-4 frame" ng-init="conectarBot()">
         <ul>
-            <div ng-repeat="msg in listaMsgs">
+            <div id="lista" ng-repeat="msg in listaMsgs">
 
                 <li ng-if="msg.Send == 1" style="width:100%">
                     <div class="msj macro">
@@ -37,7 +37,8 @@
         <div>
             <div class="msj-rta macro" style="margin:auto">
                 <div class="text text-r" style="background:whitesmoke !important">
-                    <input class="mytext" placeholder="Type a message" />
+                    <input class="mytext" placeholder="Type a message"
+                    ng-model="mensagemDigitada" ng-keyup="$event.keyCode == 13  ? enviarMensagem(mensagemDigitada) : null"/>
                 </div>
             </div>
         </div>
